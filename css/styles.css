@@ -138,7 +138,7 @@ img {
   border-radius: 2px;
   background: var(--ocean);
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
 }
 
 .header-list-link:hover,
@@ -162,6 +162,8 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-link:hover,
@@ -171,10 +173,14 @@ img {
 
 /*title*/
 
+.container-title {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .title {
   background-color: var(--navy-blue);
   padding: 188px 0;
-
   background-image: linear-gradient(to bottom, var(--grey), var(--grey)),
     url(../images/hero/office-hero.jpg);
   background-size: cover;
@@ -182,7 +188,7 @@ img {
   background-repeat: no-repeat;
 }
 
-.main-title {
+.title .main-title {
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 56px;
@@ -213,8 +219,7 @@ img {
   border: none;
   margin: 0 auto;
 
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .title-button:hover,
@@ -336,8 +341,7 @@ img {
   border-radius: 50%;
   background-color: var(--iris);
 
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-info .team-icon {
@@ -404,8 +408,8 @@ img {
 
 .portfolio-list-img:hover {
   cursor: pointer;
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0 rgba(46, 47, 66, 0.16), 0px 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-list-img img {
@@ -448,8 +452,7 @@ img {
   height: 100%;
   transform: translateY(100%);
 
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .img-portfolio:hover .overlay {
@@ -554,8 +557,7 @@ footer {
   border-radius: 50%;
   background-color: var(--iris);
 
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-footer .icon-socials {
