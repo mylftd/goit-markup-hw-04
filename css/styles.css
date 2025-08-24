@@ -359,7 +359,8 @@ img {
   fill: var(--cloud);
 }
 
-.team-info .team-icon .link-team:hover {
+.team-info .team-icon .link-team:hover,
+.team-info .team-icon .link-team:focus {
   background-color: var(--ocean);
 }
 
@@ -488,14 +489,11 @@ footer {
 
 .container-footer {
   display: flex;
-  gap: 120px;
   align-items: baseline;
 }
 
 .footer-info {
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
+  margin-right: 120px;
 }
 
 .accent-footer {
